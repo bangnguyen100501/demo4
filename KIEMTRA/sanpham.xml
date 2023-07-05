@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<sanpham>
+    <sanpham>
+    <masp>123</masp>
+    <tensp>tivi</tensp>
+    <dongia>10000</dongia>
+    </sanpham>
+<sanpham>
+    <sanpham>
+    <masp>234</masp>
+    <tensp>may giat</tensp>
+    <dongia>20000</dongia>
+    </sanpham>
+<sanpham>
+    <sanpham>
+    <masp>345</masp>
+    <tensp>tu lanh</tensp>
+    <dongia>30000</dongia>
+    </sanpham>
+    

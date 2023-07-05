@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+.container {
+  width: 60%;
+  background: #072438;
+  padding: 25px 30px;
+  border-radius: 5px;
+  color: #fff !important;
+  font-weight: bold;
+
+  margin: 0 auto;
+}
+
+.container form .user-detials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-detials .input-boxs {
+  width: calc(100% / 2 - 20px);
+  margin-top: 15px;
+}
+
+.user-detials .input-boxs .detials {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-detials .input-boxs input,
+.user-detials .input-boxs select {
+  height: 45px;
+  width: 100%;
+
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-bottom-width: 3px;
+
+  transition: all 0.3s ease;
+
+  padding-left: 15px;
+  font-size: 1rem;
+}
+
+.user-detials .input-boxs input:focus,
+.user-detials .input-boxs input:valid {
+  border-color: #9b59b6;
+}
+
+form .gender-detials .gender-title form .hobby .hobby-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender-detials .category,
+form .hobby .hobby-select {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 14px 0;
+}
+
+.gender-detials .category label {
+  display: flex;
+  align-items: center;
+}
+
+.gender-detials .category .dot,
+.hobby .hobby-select .dot {
+  height: 18px;
+  width: 18px;
+  background: #9b59b6;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+}
+
+.gender-detials .category .dot:hover,
+.hobby .hobby-select .dot:hover {
+  background-color: #bd3d3d;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three,
+#dot-4:checked ~ .category label .one,
+#dot-5:checked ~ .category label .two,
+#dot-6:checked ~ .category label .three {
+  border-color: red;
+  background: #9b59b6;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  display: none;
+}
+
+form .submit {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .submit input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  bottom: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .submit input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+/* responsive */
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-detials .input-boxs {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .gender-detials .category {
+    width: 100%;
+  }
+  .container form .user-detials {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}
